@@ -92,12 +92,11 @@ def verify(msg: bytes, sig: bytes, pub: str) -> bool
 
 <br/>
 
-
-
-##coins.py
+## coins.py
 
 ---
-####transfer(title: str, amount: int, toAddr: str, note: str)
+
+#### transfer(title: str, amount: int, toAddr: str, note: str)
 >transfer 构造普通转账交易
 
  **函数原型**

@@ -92,8 +92,29 @@ def verify(msg: bytes, sig: bytes, pub: str) -> bool
 
 <br/>
 
+
+
+##coins.py
+
 ---
+####transfer(title: str, amount: int, toAddr: str, note: str)
+>transfer 构造普通转账交易
 
-##account.py
+ **函数原型**
+```python
+def transfer(title: str, amount: int, toAddr: str, note: str) -> tx.Transaction:
+```
+ **请求参数：**
 
-####newAccount(signType=signer.SECP256K1)
+|参数|类型|是否必填|说明|
+|----|----|----|----|
+|title|str|yes|平行链链名前缀 比如user.p.huobi.|
+|amount|str|yes|转账金额|
+|toAddr|str|yes|收款地址|
+|note|str|yes|备注|
+
+**返回字段：**
+
+|返回字段|字段类型|说明|
+|----|----|----|
+|交易结果|tx.Transaction|交易结果的集合类型|

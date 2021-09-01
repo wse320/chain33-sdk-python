@@ -1,7 +1,6 @@
 # 加密相关接口
 ## ed25519.py
 
----
 #### generatePrivateKey()
 > 用于生成私钥，返回值为：私钥字符串
 
@@ -93,8 +92,6 @@ def verify(msg: bytes, sig: bytes, pub: str) -> bool
 <br/>
 
 ## coins.py
-
----
 
 #### transfer(title: str, amount: int, toAddr: str, note: str)
 >transfer 构造普通转账交易

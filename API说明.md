@@ -114,3 +114,48 @@ def transfer(title: str, amount: int, toAddr: str, note: str) -> tx.Transaction:
 |返回字段|字段类型|说明|
 |----|----|----|
 |交易结果|tx.Transaction|交易结果的集合类型|
+
+####withdraw(title: str, amount: int, execName: str, note: str)
+>构造提款交易，将其他执行器下面coins代币提回到coins执行器下面
+
+ **函数原型**
+```python
+def withdraw(title: str, amount: int, execName: str, note: str) -> tx.Transaction:
+```
+ **请求参数：**
+
+|参数|类型|是否必填|说明|
+|----|----|----|----|
+|title|str|yes|平行链链名前缀 比如user.p.huobi.|
+|amount|str|yes|转账金额|
+|execName|str|yes|合约名称|
+|note|str|yes|备注|
+
+**返回字段：**
+
+|返回字段|字段类型|说明|
+|----|----|----|
+|交易结果|tx.Transaction|交易结果的集合类型|
+
+####transferToExec(title: str, amount: int, execName: str, note: str)
+>transferToExec 将coins执行器下面的代币转移到其他执行器下面
+
+ **函数原型**
+```python
+def transferToExec(title: str, amount: int, execName: str, note: str) -> tx.Transaction:
+```
+ **请求参数：**
+
+|参数|类型|是否必填|说明|
+|----|----|----|----|
+|title|str|yes|平行链链名前缀 比如user.p.huobi.|
+|amount|str|yes|转账金额|
+|execName|str|yes|合约名称|
+|note|str|yes|备注|
+
+**返回字段：**
+
+|返回字段|字段类型|说明|
+|----|----|----|
+|交易结果|tx.Transaction|交易结果的集合类型|
+

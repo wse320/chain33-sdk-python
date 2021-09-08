@@ -115,7 +115,7 @@ def transfer(title: str, amount: int, toAddr: str, note: str) -> tx.Transaction:
 |----|----|----|
 |交易结果|tx.Transaction|交易结果的集合类型|
 
-####withdraw(title: str, amount: int, execName: str, note: str)
+#### withdraw(title: str, amount: int, execName: str, note: str)
 >构造提款交易，将其他执行器下面coins代币提回到coins执行器下面
 
  **函数原型**
@@ -137,7 +137,7 @@ def withdraw(title: str, amount: int, execName: str, note: str) -> tx.Transactio
 |----|----|----|
 |交易结果|tx.Transaction|交易结果的集合类型|
 
-####transferToExec(title: str, amount: int, execName: str, note: str)
+#### transferToExec(title: str, amount: int, execName: str, note: str)
 >transferToExec 将coins执行器下面的代币转移到其他执行器下面
 
  **函数原型**
